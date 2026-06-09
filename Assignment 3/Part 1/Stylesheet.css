@@ -19,3 +19,16 @@ ul {
   border: 5px purple;
   border-radius: 20;
 }
+
+h1 {
+  color: darkslategray;
+  border-style: dotted;
+  border: purple;
+  font-size: 2rem;
+  
+}
+
+h2 {
+  font-style: italic;
+  font-size: 1.5rem;
+}
