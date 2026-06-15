@@ -22,15 +22,14 @@ ul {
 }
 
 h1 {
-  color: darkslategray;
-  border-bottom: 10px;
-  border-top: #efefef;
-  border-left: #efefef;
-  border-right: #efefef;
-  border-style: dotted;
-  border-color: purple;
+  
+  border-bottom: 10px dotted purple;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   font-size: 2rem;
   font-weight: bold;
+  color: darkslategray;
 }
 
 h2 {
