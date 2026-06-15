@@ -15,10 +15,10 @@ body {
 
 ul {
   padding: 30px;
-  background-color: white;
   border: 5px purple;
   border-radius: 20px;
   border-style:ridge;
+  background-color: white;
 }
 
 h1 {
@@ -44,4 +44,8 @@ h2 {
 
 button:hover {
   color: green;
+}
+
+.links {
+  color:green
 }
