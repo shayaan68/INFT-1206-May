@@ -1,4 +1,14 @@
 /* General setup */
+/* The font face with the location of the files to use for the font and its personal stylizing under the url tag*/
+@font-face {
+  font-family: "Black_Ops_One";
+  src:
+    url("Fonts/BlackOpsOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 * {
   box-sizing: border-box;
@@ -24,6 +34,7 @@ main {
 
 header {
   border-bottom: 5px solid #aa6666;
+  font-family:"Black_Ops_One";
 }
 
 footer {
@@ -33,3 +44,4 @@ footer {
 footer p {
   text-align: center;
 }
+
