@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: "Black_Ops_One-Regular";
+  font-family: "Gelasio";
   src:
     url("Fonts/Gelasio/Gelasio-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
@@ -54,5 +54,5 @@ footer p {
 }
 
 section {
-  font-family: "Gelasio", Regular;
+  font-family: "Gelasio";
 }
