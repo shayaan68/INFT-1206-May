@@ -18,6 +18,17 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Limelight";
+  src:
+    url("Fonts/Limelight/Limelight-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -43,6 +54,7 @@ main {
 header {
   border-bottom: 5px solid #aa6666;
   font-family:"Black_Ops_One";
+  text-align: center;
 }
 
 footer {
@@ -55,4 +67,18 @@ footer p {
 
 section {
   font-family: "Gelasio";
+}
+
+nav {
+  font-family: "Limelight";
+}
+
+aside {
+  font-family: "Limelight";
+}
+
+h2 {
+  border-bottom: 5px solid #aa6666;
+  font-family:"Black_Ops_One";
+  text-align: center;
 }
