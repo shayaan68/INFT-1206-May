@@ -60,7 +60,9 @@ nav a {
 }
 
 .feature {
-  width: 200px;
+  width: 300px;
+  float: left;
+  margin-right: 15px;
 }
 
 ul.photos {
