@@ -9,19 +9,23 @@ function randomValueFromArray(array) {
   return array[random];
 }
 
-// Raw text strings
+//this is to genrate which charcters will be used
+function randomCharcterNamesArrary(array) {
+  const charcter = ("Willy the Goblin","Father Christmas","Big Daddy");
+  return array[random];
+}
 
-// Willy the Goblin
-// Big Daddy
-// Father Christmas
+//this is to genrate the name of places that be used in the story
+function randomPlacesNamesArrary(array) {
+  const charcter = ("the soup kitchen","DisneyLand","the white house");
+  return array[random];
+}
 
-// the soup kitchen
-// Disneyland
-// the White House
-
-// spontaneously combusted
-// melted into a puddle on the sidewalk
-// turned into a slug and slithered away
+//this is to genrate which ations will be put into the story
+function randomCharcterNamesArrary(array) {
+  const charcter = ("spontaneously combusted","melted into a puddle on the sidewalk","turned into a slug and slithered away");
+  return array[random];
+}
 
 // Partial return random string function
 
