@@ -17,20 +17,20 @@ function randomCharcterNamesArrary(array) {
 
 //this is to genrate the name of places that be used in the story
 function randomPlacesNamesArrary(array) {
-  const charcter = ("the soup kitchen","DisneyLand","the white house");
+  const Place = ("the soup kitchen","DisneyLand","the white house");
   return array[random];
 }
 
 //this is to genrate which ations will be put into the story
-function randomCharcterNamesArrary(array) {
-  const charcter = ("spontaneously combusted","melted into a puddle on the sidewalk","turned into a slug and slithered away");
+function randomEventArrary(array) {
+  const Verb = ("spontaneously combusted","melted into a puddle on the sidewalk","turned into a slug and slithered away");
   return array[random];
 }
 
 // Partial return random string function
 
 function returnRandomStoryString() {
-  // It was 94 Fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.
+  "It was 94 Fahrenheit outside, so",charcter ,"went for a walk. When they got to",Place,", they stared in horror for a few moments, then",Verb,". Bob saw the whole thing, but was not surprised —",charcter, "weighs 300 pounds, and it was a hot day."
 
   return storyText;
 }
