@@ -39,14 +39,16 @@ function returnRandomStoryString() {
 
 generateBtn.addEventListener("click", generateStory);
 
+newStory = returnRandomStoryString()
+
 function generateStory() {
-  if (customName.value !== "") {
+  if (customName.value !== name) {
     const name = customName.value;
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature = Math.round(94);
+    const weight = Math.round(weight/14);
+    const temperature = Math.round((temperature -32)*5/9);
   }
 
   // TODO: replace "" with the correct expression
