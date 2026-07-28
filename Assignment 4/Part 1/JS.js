@@ -9,29 +9,43 @@ function randomValueFromArray(array) {
   return array[random];
 }
 
-//this is to genrate which charcters will be used
-function randomCharcterNamesArrary(array) {
-  const charcter = ("Willy the Goblin","Father Christmas","Big Daddy");
-  return array[random];
-}
-
-//this is to genrate the name of places that be used in the story
-  const Place = ["the soup kitchen","DisneyLand","the white house"];
-  return array[random]
+//this is to define a list of names to be randomly chossen via cycling through the array 
+  const Characters = [
+    "Willy the Goblin",
+    "Father Christmas",
+    "Big Daddy"];
 
 
-//this is to genrate which ations will be put into the story
-  const Verb = ["spontaneously combusted","melted into a puddle on the sidewalk","turned into a slug and slithered away"];
-  return array[random];
+//this is to define a list of places to be randomly chossen via cycling through the array
+  const Places = [
+    "the soup kitchen",
+    "DisneyLand",
+    "the white house"];
+
+
+//this is to define a list of certin events to be randomly chosen via cycling through the array
+  const Events = [
+    "spontaneously combusted",
+    "melted into a puddle on the sidewalk",
+    "turned into a slug and slithered away"];
 
 
 // Partial return random string function
 
 function returnRandomStoryString() {
-  const character = randomValueFromArray(characters);
-  const place = randomValueFromArray(places);
-  const event = randomValueFromArray(events);
-  const storyText ="It was 94 Fahrenheit outside, so"+ charcter +"went for a walk. When they got to"+ Place+ ", they stared in horror for a few moments, then"+ Verb+ ". Bob saw the whole thing, but was not surprised —"+ charcter +"weighs 300 pounds, and it was a hot day."
+  const character = randomValueFromArray(Characters);
+  const place = randomValueFromArray(Places);
+  const event = randomValueFromArray(Events);
+  const storyText =
+  "It was 94 Fahrenheit outside, so"
+  +character +
+  "went for a walk. When they got to"
+  +place+ 
+  ",they stared in horror for a few moments, then"
+  +event + 
+  ".Bob saw the whole thing, but was not surprised —"
+  +character+
+  "weighs 300 pounds, and it was a hot day."
   return storyText;
 }
 
@@ -39,16 +53,20 @@ function returnRandomStoryString() {
 
 generateBtn.addEventListener("click", generateStory);
 
-newStory = returnRandomStoryString()
+
 
 function generateStory() {
-  if (customName.value !== name) {
-    const name = customName.value;
+  let newStory = returnRandomStoryString()
+  if (customName.value !== "") {
+    newStory = newStory.replaceAll("Bob", customName.value);
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(weight/14);
-    const temperature = Math.round((temperature -32)*5/9);
+    const weight = Math.round(weight);
+    convertedWeight = (weight/14)
+
+    const temperature = Math.round(temperature);
+    convertedTemprature = ((temperature -32)*5/9)
   }
 
   // TODO: replace "" with the correct expression
