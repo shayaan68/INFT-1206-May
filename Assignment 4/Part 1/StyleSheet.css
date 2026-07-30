@@ -1,0 +1,14 @@
+/* 
+Name: Shayaan Shah
+Date: July 20th 2026
+File Name: Assignment 4/Part 1/ StyleSheet.css
+Description: this file fomats the genrated text to have a yellow backround
+*/
+
+.story {
+  width: 80%;
+  margin: 20px auto;
+  background: #FFC125;
+  padding: 10px;
+  visibility: hidden;
+}

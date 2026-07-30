@@ -1,5 +1,12 @@
-// Complete variable definitions and random functions
+/* 
+Name: Shayaan Shah
+Date: July 20th 2026
+File Name: Assignment 4/Part 1/ JS.js
+Description: this file use the JavaScript to generate a story
+*/
 
+
+// Complete variable definitions and random functions
 const customName = document.getElementById("custom-name");
 const generateBtn = document.querySelector(".generate");
 const story = document.querySelector(".story");
@@ -38,13 +45,13 @@ function returnRandomStoryString(weight, temperature) {
   const event = randomValueFromArray(Events);
   const storyText =
   "It was 94 Fahrenheit outside, so " 
-  + character+
+  + character +
   " went for a walk. When they got to " 
-  + place+
+  + place +
   ", they stared in horror for a few moments, then " 
   + event +
-  ".Bob saw the whole thing, but was not surprised — " 
-  +character+
+  ". Bob saw the whole thing, but was not surprised — " 
+  + character +
   " weighs 300 pounds, and it was a hot day. ";
   return storyText;
 }
@@ -65,7 +72,7 @@ function generateStory() {
 
   if (document.getElementById("uk").checked) {
     const weight = `${Math.round(300/14)} stone`;
-    const temperature = `${Math.round((94-32)*5/9)}Centigrade`;
+    const temperature = `${Math.round((94-32)*5/9)} Centigrade`;
 
     newStory = newStory.replace("300 pounds", weight);
     newStory = newStory.replace("94 Fahrenheit",temperature);
