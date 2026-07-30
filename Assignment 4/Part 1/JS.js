@@ -32,23 +32,22 @@ function randomValueFromArray(array) {
 
 // Partial return random string function
 
-function returnRandomStoryString() {
+function returnRandomStoryString(weight, temperature) {
   const character = randomValueFromArray(Characters);
   const place = randomValueFromArray(Places);
   const event = randomValueFromArray(Events);
   const storyText =
-  "It was 94 Fahrenheit outside, so"
-  +character +
-  "went for a walk. When they got to"
-  +place+ 
-  ",they stared in horror for a few moments, then"
-  +event + 
-  ".Bob saw the whole thing, but was not surprised —"
+  "It was 94 Fahrenheit outside, so " 
+  + character+
+  " went for a walk. When they got to " 
+  + place+
+  ", they stared in horror for a few moments, then " 
+  + event +
+  ".Bob saw the whole thing, but was not surprised — " 
   +character+
-  "weighs 300 pounds, and it was a hot day."
+  " weighs 300 pounds, and it was a hot day. ";
   return storyText;
 }
-
 // Event listener and partial generate function definition
 
 generateBtn.addEventListener("click", generateStory);
@@ -56,20 +55,25 @@ generateBtn.addEventListener("click", generateStory);
 
 
 function generateStory() {
-  let newStory = returnRandomStoryString()
+  
+  let newStory = returnRandomStoryString();
+ 
+
   if (customName.value !== "") {
     newStory = newStory.replaceAll("Bob", customName.value);
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(weight);
-    convertedWeight = (weight/14)
+    const weight = `${Math.round(300/14)} stone`;
+    const temperature = `${Math.round((94-32)*5/9)}Centigrade`;
 
-    const temperature = Math.round(temperature);
-    convertedTemprature = ((temperature -32)*5/9)
+    newStory = newStory.replace("300 pounds", weight);
+    newStory = newStory.replace("94 Fahrenheit",temperature);
   }
 
+  
   // TODO: replace "" with the correct expression
   story.textContent = newStory;
   story.style.visibility = "visible";
+
 }
