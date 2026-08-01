@@ -4,4 +4,15 @@ const thumbBar = document.querySelector(".thumb-bar");
 const btn = document.querySelector("button");
 const overlay = document.querySelector(".overlay");
 
-const images = [];
+const images = [
+"pic1.jpg",
+"pic2.jpg",
+"pic3.jpg",
+"pic4.jpg",
+"pic5.jpg"  ];
+
+for (let i = 1; i <= 5; i++) {
+
+}
+
+const newImage = document.createElement("img");
