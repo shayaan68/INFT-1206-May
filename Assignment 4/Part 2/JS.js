@@ -12,7 +12,12 @@ const images = [
 "pic5.jpg"  ];
 
 for (let i = 1; i <= 5; i++) {
+    const newImage = document.createElement("img");
+    newImage.src = `Pictures/pic1${i}.jpg`
+    thumbBar.appendChild(newImage);
+    newImage.addEventListener("click", () => {
+        displayedImage.src = newImage.src;
 
+    });
 }
 
-const newImage = document.createElement("img");
